@@ -1,0 +1,8 @@
+The current deployment consists of a RDS MySQL multi-AZ database in the active region accompanied by read replica in standby region. 
+Given RDS MYSQL is fully managed AWS service, instance failover is expected to be automatically handled with minimum RTO of 2 min for a single AZ outage and zero RPO for expected disruptions. The region level outage is managed by standby replica instance in failover region, however, cross region replication is expected to have some latency. The minimum RTO for single region outage is expected to be < 5 mins and zero RPO.
+
+Here, 
+Recover Time Objective (RTO) is the maximum time your platform or service can be unavailable. 
+Recovery Point Objective (RPO) is the maximum amount of time that your system can lose data for.
+
+ 
