@@ -11,10 +11,10 @@ Part 1, Part 2 and Part 3 solution uploaded to project 1 folder
 
 In this project, you will:
 
-    Deploy and assess a simple web application environment’s security posture
-    Test the security of the environment by simulating attack scenarios and exploiting cloud configuration vulnerabilities
-    Implement monitoring to identify insecure configurations and malicious activity
-    Apply methods learned in the course to harden and secure the environment
-    Design a DevSecOps pipeline
+    1. Deploy and assess a simple web application environment’s security posture
+    2. Test the security of the environment by simulating attack scenarios and exploiting cloud configuration vulnerabilities
+    3. Implement monitoring to identify insecure configurations and malicious activity
+    4. Apply methods learned in the course to harden and secure the environment
+    5. Design a DevSecOps pipeline
     
  Exercise 1,2,3,4,5, uploaded to project 3 folder
