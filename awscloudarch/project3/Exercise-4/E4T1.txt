@@ -1,0 +1,18 @@
+
+
+# Identify 2-3 changes that can be made to our environment to prevent an ssh brute force attack from the internet.
+
+1. Change security group settings to not to allow ssh connections from the internet
+2. Disable the passwords for ssh login 
+3. Set stronger password complexity/ paraphrase for ssh users
+4. Lock out accounts after a defined number of incorrect password attempts
+5. Use AWS Systems Manager to SSH into an EC2 instance for application server 
+6. Restrict the IPs that are allowed to access by providing a CIDR block or specific IP address
+
+
+# Neither instance should have had access to the secret recipes bucket, in the even that instance API credentials were compromised how could we have prevented access to sensitive data.
+
+1. Create S3 Bucket Policies: Use policies to restrict and control access using ACLs
+2. Encrypt the data on S3 using server side encryption 
+3. Potentially, set up MFA-protected API access that requires AWS MFA device before calling S3 API operations
+

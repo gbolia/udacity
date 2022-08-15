@@ -1,0 +1,20 @@
+Based on the architecture diagram, and the steps you have taken so far to upload data and access the application web service, identify at least 2 obvious poor practices as it relates to security.  Include justification.
+
+
+# Poor Practice 1. Least Privilege Violation (s3 full access)
+InstanceRole(IAM role) has full access to any s3 bucket instance.  The common security practice of granting least privilege is not practiced.
+Roles should be specific to the list of resources and actions. 
+
+# Poor Practice 2. Least Privilege Violation (access to all instances) 
+Acesss to S3 is not specified by separate roles with appropriate policies set for specific actions on specific buckets.
+The two instances (RecipeWebServiceInstance and AttackInstance) have the same IAM role.
+
+# Poor practice 3. Infrastructure not secured
+Web service is hosted by an HTTP load balancer listening on port 80. 
+Also, the Cloudformation template for EC2 shows that WebAppSG has inbound traffic opened for port 5000,22 and 80 ports which is base Http communication. 
+Ideally, as internet facing application port 443 should be set up for secured http comm.
+
+#Poort Practice 4. Limited Ingress and Egress Controls
+Security Groups (WebAppSG, AppLoadBalancerSG) applied to resources allow all incoming traffic. They are not
+restricted to specific source networks or IP ranges leaving it open for unwanted connections/ attackers. 
+

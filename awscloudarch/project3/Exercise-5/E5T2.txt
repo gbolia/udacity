@@ -1,0 +1,47 @@
+# Identify tools that will allow you to do the following:
+
+## Scan infrastructure as code templates
+terrascan: https://github.com/cesar-rodriguez/terrascan
+Regula: https://github.com/fugue/regula
+Chef inspec
+
+### Example vulnerability
+Regula: IAM policies with full "*:*" administrative privileges
+Disk storage has been provisioned without volume encryption enabled.
+
+
+
+##Scan AMI’s or containers for OS vulnerabilities
+Open source tools include:
+
+    Clair
+    Anchore
+    Trivy
+    etc.
+
+Commercial products include:
+
+    aquasec,
+    sysdig
+    twistlock
+    etc.
+
+### Example vulnerability
+
+    Allowing SSH password login
+    Vulnerabilities to Django libraries
+
+
+
+##Scan an AWS environment for cloud configuration vulnerabilities
+AWS Config
+Security Hub
+Open source products that can perform one time indepth checks include:
+
+    Prowler
+    Scout2
+    Cloudsploit
+
+### Example vulnerability
+    Unsecured privileged users - no MFA and no constrained permission condition     
+    A server instance has been created and configured to allow RDP connections from the public internet.
