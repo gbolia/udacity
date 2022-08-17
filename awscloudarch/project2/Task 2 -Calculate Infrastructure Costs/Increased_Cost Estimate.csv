@@ -1,6 +1,7 @@
 ﻿Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
 My Estimate,US East (N. Virginia),Webservers,Amazon EC2,0,7275.76,87309.12,USD,"Operating system (Linux), Quantity (8), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (50 GB), Instance type (m4.10xlarge)"
 My Estimate,US East (N. Virginia),AppServer,Amazon EC2,0,2918.3,35019.6,USD,"Operating system (Linux), Quantity (8), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (30 GB), Instance type (m4.4xlarge)"
+My Estimate,US East (N. Virginia),VPC,VPN Connection,0,567,6804,USD,"Working days per month (22), Number of subnet associations (4)"
 My Estimate,US East (N. Virginia),VPC,Network Address Translation (NAT) Gateway,0,526.5,6318,USD,Number of NAT Gateways (2)
 My Estimate,US East (N. Virginia),VPC,Gateway Load Balancer,0,580.35,6964.2,USD,"Number of Availability Zones that Gateway Load Balancer is deployed to (2), Number of Gateway Load Balancer Endpoints (2), Total processed bytes (100 GB per hour), Average connection/flow duration (30 minutes)"
 My Estimate,US East (N. Virginia),Load Balancer,Application Load Balancer,0,1200.85,14410.2,USD,Number of Application Load Balancers (2)
@@ -19,10 +20,10 @@ Acknowledgement,,,,,,,,
 "* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,
 ,,,,,,,,
 ,,,,,,,,
-Updates performed:,,,,,,,,
+Updates:,,,,,,,,
 Switched EC2 instance type from r6g.xlarge  to m4.4xlarge for app servers ,,,,,,,,
 Switched EC2 instance type from r6g.xlarge  to m4.10xlarge for web servers,,,,,,,,
-Switched the DB server instance type from (db.m5.2xlarge) to (db.m5.4xlarge),,,,,,,,
+Switched the DB server instance type from (db.m5.2xlarge) to (db.m5.4xlarge) with on demand pricing,,,,,,,,
 Added Cloudwatch,,,,,,,,
 Added WAF,,,,,,,,
 Added GuardDuty,,,,,,,,

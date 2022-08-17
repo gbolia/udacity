@@ -1,10 +1,11 @@
 ﻿Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
-My Estimate,US East (N. Virginia),Webservers,Amazon EC2,0,824.9,9898.80,USD,"Operating system (Linux), Quantity (8), Pricing strategy (On-Demand Instances), Storage amount (50 GB), Instance type (t4g.xlarge)"
+My Estimate,US East (N. Virginia),Webservers,Amazon EC2,0,1217.34,14608.08,USD,"Operating system (Linux), Quantity (8), Pricing strategy (On-Demand Instances), Storage amount (50 GB), Instance type (r6g.xlarge)"
 My Estimate,US East (N. Virginia),AppServer,Amazon EC2,0,1201.34,14416.08,USD,"Operating system (Linux), Quantity (8), Pricing strategy (On-Demand Instances), Storage amount (30 GB), Instance type (r6g.xlarge)"
+My Estimate,US East (N. Virginia),VPC,VPN Connection,0,567,6804.00,USD,"Working days per month (22), Number of subnet associations (4)"
 My Estimate,US East (N. Virginia),VPC,Network Address Translation (NAT) Gateway,0,526.5,6318.00,USD,Number of NAT Gateways (2)
 My Estimate,US East (N. Virginia),VPC,Gateway Load Balancer,0,580.35,6964.20,USD,"Number of Availability Zones that Gateway Load Balancer is deployed to (2), Number of Gateway Load Balancer Endpoints (2), Total processed bytes (100 GB per hour), Average connection/flow duration (30 minutes)"
 My Estimate,US East (N. Virginia),Load Balancer,Application Load Balancer,0,1200.85,14410.20,USD,Number of Application Load Balancers (2)
-My Estimate,US East (N. Virginia),DataBase,Amazon RDS for PostgreSQL,0,4627.58,55530.96,USD,"Storage volume (General Purpose SSD (gp2)), Storage amount (1000 GB per month), Nodes (2), Instance Type (db.m5.4xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment Option (Multi-AZ), Pricing Model (OnDemand), Additional backup storage (100 GB)"
+My Estimate,US East (N. Virginia),DataBase,Amazon RDS for PostgreSQL,0,3132.686,37592.23,USD,"Storage volume (General Purpose SSD (gp2)), Storage amount (1000 GB per month), Nodes (2), Instance Type (db.m5.4xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment Option (Multi-AZ), Pricing Model (Reserved), Lease Offering Term (1yr), Purchase Option (No Upfront), Additional backup storage (100 GB)"
 My Estimate,US East (N. Virginia),Route53,Amazon Route 53,0,0,0.00,USD,
 My Estimate,US East (N. Virginia),Cloudfront,Amazon CloudFront,0,119,1428.00,USD,"Data transfer out to internet (200 GB per month), Data transfer out to origin (100 GB per month), Number of requests (HTTPS) (100 million per month)"
 My Estimate,US East (N. Virginia),S3,S3 Standard,0,4.6,55.20,USD,S3 Standard storage (200 GB per month)
